@@ -61,15 +61,88 @@
       </section>
   
       <!-- Technology Section -->
-      <section class="py-16 bg-gray-900 text-white">
+      <section class="py-24 bg-gray-50">
         <div class="container mx-auto px-6">
-          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-            Potenciado por Inteligencia Artificial
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div v-for="(tech, index) in techFeatures" :key="index" 
-                 class="bg-gray-800 p-6 rounded-lg">
-              <p class="text-lg">{{ tech }}</p>
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Potenciado por Inteligencia Artificial
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Aprovecha el poder de la IA para optimizar tus operaciones y tomar decisiones más inteligentes
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+              <div class="mb-6">
+                <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="ph:database-bold" class="w-7 h-7 text-blue-600"/>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">
+                  Sistemas RAG Avanzados
+                </h3>
+                <p class="text-gray-600">
+                  Consulta y analiza documentos y datos de forma inteligente. Obtén respuestas precisas al instante.
+                </p>
+              </div>
+              <ul class="space-y-2">
+                <li class="flex items-center text-gray-600">
+                  <Icon name="ph:check-circle" class="w-5 h-5 text-green-500 mr-2"/>
+                  Búsqueda contextual inteligente
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <Icon name="ph:check-circle" class="w-5 h-5 text-green-500 mr-2"/>
+                  Procesamiento de lenguaje natural
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+              <div class="mb-6">
+                <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="ph:robot-bold" class="w-7 h-7 text-blue-600"/>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">
+                  Automatización Inteligente
+                </h3>
+                <p class="text-gray-600">
+                  Automatiza tareas repetitivas y procesos complejos con precisión y eficiencia.
+                </p>
+              </div>
+              <ul class="space-y-2">
+                <li class="flex items-center text-gray-600">
+                  <Icon name="ph:check-circle" class="w-5 h-5 text-green-500 mr-2"/>
+                  Flujos de trabajo automatizados
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <Icon name="ph:check-circle" class="w-5 h-5 text-green-500 mr-2"/>
+                  Reducción de errores humanos
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+              <div class="mb-6">
+                <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="ph:chart-line-up-bold" class="w-7 h-7 text-blue-600"/>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">
+                  Análisis Predictivo
+                </h3>
+                <p class="text-gray-600">
+                  Anticipa tendencias y toma decisiones basadas en datos con modelos predictivos avanzados.
+                </p>
+              </div>
+              <ul class="space-y-2">
+                <li class="flex items-center text-gray-600">
+                  <Icon name="ph:check-circle" class="w-5 h-5 text-green-500 mr-2"/>
+                  Predicción de demanda
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <Icon name="ph:check-circle" class="w-5 h-5 text-green-500 mr-2"/>
+                  Optimización de inventario
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -171,8 +244,23 @@
   ]
   
   const techFeatures = [
-    'Sistemas RAG para consulta de documentos y datos',
-    'Automatización inteligente de procesos',
-    'Análisis predictivo para mejores decisiones'
+    {
+      icon: 'ph:database-bold',
+      title: 'Sistemas RAG Avanzados',
+      description: 'Consulta y analiza documentos y datos de forma inteligente',
+      features: ['Búsqueda contextual inteligente', 'Procesamiento de lenguaje natural']
+    },
+    {
+      icon: 'ph:robot-bold',
+      title: 'Automatización Inteligente',
+      description: 'Automatiza tareas repetitivas y procesos complejos',
+      features: ['Flujos de trabajo automatizados', 'Reducción de errores humanos']
+    },
+    {
+      icon: 'ph:chart-line-up-bold',
+      title: 'Análisis Predictivo',
+      description: 'Anticipa tendencias y toma decisiones basadas en datos',
+      features: ['Predicción de demanda', 'Optimización de inventario']
+    }
   ]
   </script>
