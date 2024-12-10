@@ -1,7 +1,7 @@
 <template>
-  <UHeader class="border-b border-gray-200 dark:border-gray-800">
-    <div class="container mx-auto px-6">
-      <div class="flex items-center justify-between h-16">
+  <div class="border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-8">
+      <div class="flex items-center justify-between h-20">
         <!-- Logo Section -->
         <div class="flex items-center">
           <NuxtLink to="/" class="text-2xl font-bold text-blue-600">
@@ -52,7 +52,7 @@
       </div>
 
       <!-- Mobile Navigation -->
-      <UCollapse v-model="isOpen" class="md:hidden">
+      <USlideOver v-model="isOpen" class="md:hidden">
         <div class="py-4 space-y-4">
           <UButton
             v-for="(item, index) in navigationItems"
@@ -85,19 +85,15 @@
             </UButton>
           </div>
         </div>
-      </UCollapse>
+      </USlideOver>
     </div>
-  </UHeader>
+  </div>
 </template>
 
 <script setup>
 const isOpen = ref(false)
 
 const navigationItems = [
-  {
-    label: 'Soluciones',
-    to: '/soluciones'
-  },
   {
     label: 'Módulos',
     to: '/modulos'
