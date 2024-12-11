@@ -1,7 +1,8 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <header class="bg-gradient-to-r from-blue-600 to-blue-800">
+      <header class="bg-gradient-to-r from-blue-600 to-blue-800">
+        <UContainer>
       <div class="container mx-auto px-6 py-28">
         <div class="flex flex-col items-center text-center text-white">
           <h1
@@ -15,12 +16,14 @@
           </p>
         </div>
       </div>
+      </UContainer>
     </header>
 
     <!-- Backend Section -->
     <section class="py-16 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      <UContainer>
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
           Backend: Potencia y Flexibilidad
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -70,12 +73,14 @@
             </ul>
           </UCard>
         </div>
-      </div>
+        </div>
+      </UContainer>
     </section>
 
     <!-- Frontend Section -->
     <section class="py-16">
-      <div class="container mx-auto px-6">
+      <UContainer>
+        <div class="container mx-auto px-6">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
           Frontend: Arquitectura Modular
         </h2>
@@ -122,8 +127,9 @@
               </li>
             </ul>
           </UCard>
+          </div>
         </div>
-      </div>
+      </UContainer>
     </section>
   </div>
 </template>
@@ -135,7 +141,7 @@ const pocketbaseFeatures = [
   "Panel de administración incluido",
   "Despliegue simple con un solo ejecutable",
   "Escalable y fácil de mantener",
-  "Perfecto para prototipos rápidos",
+  "Permite exportar colecciones, haciendolo reutilizable",
 ];
 
 const fastapiFeatures = [
