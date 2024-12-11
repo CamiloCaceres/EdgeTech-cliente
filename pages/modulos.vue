@@ -90,6 +90,10 @@
                     </div>
                   </div>
                 </div>
+
+                <UButton block to="/cotizaciones/nueva" color="primary" icon="i-heroicons-plus">
+                  Crear Cotización
+                </UButton>
               </div>
             </div>
           </div>
