@@ -53,7 +53,7 @@
       </div>
 
       <!-- Mobile Navigation -->
-      <USlideOver v-model="isOpen" class="md:hidden">
+      <USlideover v-model="isOpen" class="md:hidden">
         <div class="py-4 space-y-4">
           <UButton
             v-for="(item, index) in navigationItems"
@@ -86,7 +86,7 @@
             </UButton>
           </div>
         </div>
-      </USlideOver>
+      </USlideover>
     </div>
   </div>
 </template>
