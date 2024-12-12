@@ -2,7 +2,7 @@
   <!-- Hero Section -->
   <div class="min-h-screen">
     <header class="bg-gradient-to-r from-blue-600 to-blue-800">
-      <UCon class="container mx-auto px-6 py-28">
+      <UContainer class="container mx-auto px-6 py-28">
         <div class="flex flex-col items-center text-center text-white">
           <h1
             class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
@@ -18,7 +18,7 @@
             Comienza Tu Transformación Digital
           </button>
         </div>
-      </UCon>
+      </UContainer>
     </header>
 
     <!-- Value Proposition Section -->
