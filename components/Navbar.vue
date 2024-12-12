@@ -5,7 +5,7 @@
         <!-- Logo Section -->
         <div class="flex items-center">
           <NuxtLink to="/" class="text-2xl font-bold text-blue-600">
-            DigiPyME
+            EdgeTech
           </NuxtLink>
         </div>
 
@@ -33,7 +33,8 @@
             <UButton
               variant="solid"
               color="blue"
-              to="/contacto"
+              target="_blank"
+              to="https://github.com/CamiloCaceres"
             >
               Contactar
             </UButton>
