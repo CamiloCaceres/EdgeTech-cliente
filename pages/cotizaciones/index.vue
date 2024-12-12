@@ -1,7 +1,7 @@
 <!-- pages/cotizaciones/index.vue -->
 <template>
   <UContainer>
-    <div class="flex justify-between items-center mb-6">
+    <div class="flex justify-between items-center my-6">
       <h1 class="text-2xl font-bold">Cotizaciones</h1>
       <UButton to="/cotizaciones/nueva" color="primary" icon="i-heroicons-plus">
         Nueva Cotización
