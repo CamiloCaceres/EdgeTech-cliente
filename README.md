@@ -69,7 +69,7 @@ EdgeTech es una plataforma integral de transformación digital diseñada especí
 
 1. Clonar el repositorio:
 ```bash
-git clone [url-del-repositorio]
+git clone [https://github.com/CamiloCaceres/EdgeTech-cliente]
 cd digipyme
 ```
 
