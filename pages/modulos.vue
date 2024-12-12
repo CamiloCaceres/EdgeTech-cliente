@@ -92,7 +92,7 @@
                 </div>
 
                 <UButton block to="/cotizaciones/nueva" color="primary" icon="i-heroicons-plus">
-                  Crear Cotización
+                  Ver Demo del Módulo
                 </UButton>
               </div>
             </div>
